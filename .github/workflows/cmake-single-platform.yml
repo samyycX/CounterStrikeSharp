@@ -103,6 +103,7 @@ jobs:
 
       - name: Build
         run: |
+          cat ./libraries/hl2sdk-cs2/public/entity2/entitysystem.h
           mkdir -p build
           cd build
           cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} ..
